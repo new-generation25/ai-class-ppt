@@ -8,9 +8,9 @@ Reveal.initialize({
     transitionSpeed: 'default',
     backgroundTransition: 'fade',
     center: false,
-    width: 1920,
-    height: 1200,  // 16:10 비율
-    margin: 0.08,  // 상하 여유 공간 증가
+    width: '100%',
+    height: '100%',
+    margin: 0.05,
     minScale: 0.2,
     maxScale: 2.0,
     controls: true,
