@@ -38,6 +38,7 @@ body {
 
 .reveal {
     font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 80px !important;
 }
 
 .reveal .slides {
