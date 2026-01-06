@@ -9,8 +9,8 @@ Reveal.initialize({
     backgroundTransition: 'fade',
     center: false,
     width: 1920,
-    height: 1080,
-    margin: 0.04,
+    height: 1200,  // 16:10 비율
+    margin: 0.08,  // 상하 여유 공간 증가
     minScale: 0.2,
     maxScale: 2.0,
     controls: true,
@@ -25,7 +25,7 @@ Reveal.initialize({
     fragments: true,
     embedded: false,
     help: true,
-    showNotes: false,
+    showNotes: false,  // 's' 키를 누르면 발표자 노트 창 열림
     autoSlide: 0,
     autoSlideStoppable: true,
     mouseWheel: false,
