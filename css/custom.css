@@ -194,10 +194,30 @@
 
 /* 슬라이드 번호 */
 .reveal .slide-number {
-    background: linear-gradient(135deg, #a8b5ff 0%, #c9a9e9 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 0.6rem 1.2rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 24px;
     font-weight: 700;
-    box-shadow: 0 4px 16px rgba(168, 181, 255, 0.2);
+    font-size: 1.3rem;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+    bottom: 20px !important;
+    right: 20px !important;
+}
+
+/* 컨트롤 화살표 위치 조정 */
+.reveal .controls {
+    bottom: 30px !important;
+    right: 100px !important;
+}
+
+.reveal .controls button {
+    color: #667eea !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.reveal .controls button:hover {
+    color: #764ba2 !important;
+    transform: scale(1.1);
 }
