@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# Build files
+dist/
+build/
+
+# JSON (extracted content from PDF)
+pdf_content.json
+
+# Temporary Python scripts (optional, 백업용으로 유지하고 싶다면 제거)
+# extract_pdf.py
+# merge_slides.py

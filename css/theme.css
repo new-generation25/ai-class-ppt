@@ -1,0 +1,249 @@
+/* 예술적 그라디언트 테마 - AI 워크숍 */
+
+:root {
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    --gradient-secondary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --gradient-accent: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    --color-primary: #667eea;
+    --color-secondary: #764ba2;
+    --color-accent: #f093fb;
+    --color-text: #2d3748;
+    --color-text-light: #718096;
+    --color-bg: #ffffff;
+    --color-bg-light: #f7fafc;
+    --shadow-sm: 0 2px 8px rgba(102, 126, 234, 0.1);
+    --shadow-md: 0 10px 40px rgba(102, 126, 234, 0.15);
+    --shadow-lg: 0 20px 60px rgba(102, 126, 234, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--color-bg);
+}
+
+.reveal {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    font-weight: 700;
+    color: var(--color-text);
+    text-transform: none;
+    margin-bottom: 1.5rem;
+}
+
+.reveal h1 {
+    font-size: 3rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+}
+
+.reveal h2 {
+    font-size: 2.5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.reveal h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+}
+
+.reveal p, .reveal li {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    font-weight: 400;
+}
+
+.reveal strong {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.reveal section {
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(247,250,252,0.95) 100%);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+}
+
+.reveal .gradient-box {
+    background: var(--gradient-primary);
+    padding: 2rem;
+    border-radius: 20px;
+    color: white;
+    margin: 1rem 0;
+}
+
+.reveal .gradient-box h2,
+.reveal .gradient-box h3,
+.reveal .gradient-box p {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+}
+
+.reveal .highlight-box {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
+    border-left: 4px solid var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+.reveal .tip-box {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow-md);
+    position: relative;
+}
+
+.reveal .tip-box::before {
+    content: "💡";
+    font-size: 2rem;
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+}
+
+.reveal .tip-box p {
+    margin-left: 2.5rem;
+    color: #2d3748;
+}
+
+.reveal table {
+    font-size: 1.1rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.reveal table th {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.reveal table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    background: white;
+}
+
+.reveal table tr:last-child td {
+    border-bottom: none;
+}
+
+.reveal code {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-family: 'Noto Sans KR', monospace;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.reveal pre {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.reveal pre code {
+    background: transparent;
+    color: #a0aec0;
+    padding: 0;
+}
+
+.reveal ul, .reveal ol {
+    margin-left: 2rem;
+}
+
+.reveal li {
+    margin-bottom: 0.8rem;
+}
+
+.reveal .check-list li::marker {
+    content: "✓ ";
+    color: #48bb78;
+    font-weight: 700;
+}
+
+.reveal .cross-list li::marker {
+    content: "✗ ";
+    color: #f56565;
+    font-weight: 700;
+}
+
+/* 슬라이드 특수 레이아웃 */
+.reveal .slide-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: var(--gradient-primary);
+    border-radius: 0;
+}
+
+.reveal .slide-title h1,
+.reveal .slide-title h2,
+.reveal .slide-title p {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+}
+
+.reveal .two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.reveal .column {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.reveal .badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0.3rem;
+}
+
+.reveal .progress {
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.reveal .controls {
+    color: var(--color-primary);
+}
