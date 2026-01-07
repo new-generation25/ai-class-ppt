@@ -43,7 +43,7 @@ body {
 }
 
 .reveal h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,7 +52,7 @@ body {
 }
 
 .reveal h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -60,13 +60,13 @@ body {
 }
 
 .reveal h3 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     color: var(--color-primary);
 }
 
 .reveal p, .reveal li {
-    font-size: 1.3rem;
-    line-height: 1.8;
+    font-size: 2.4rem;
+    line-height: 1.5;
     color: var(--color-text);
     font-weight: 400;
 }
@@ -129,7 +129,7 @@ body {
 }
 
 .reveal table {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 12px;
@@ -160,7 +160,7 @@ body {
     border-radius: 6px;
     font-family: 'Noto Sans KR', monospace;
     color: var(--color-primary);
-    font-size: 1.1rem;
+    font-size: 1.8rem;
 }
 
 .reveal pre {
@@ -234,7 +234,7 @@ body {
     background: var(--gradient-primary);
     color: white;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 0.3rem;
 }

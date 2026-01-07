@@ -120,6 +120,14 @@ document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         modal.style.display = 'none';
     }
+
+    // 프로젝터 리모컨 및 내비게이션 키 지원
+    if (event.key === 'PageDown' || event.key === 'Enter') {
+        Reveal.next();
+    }
+    if (event.key === 'PageUp') {
+        Reveal.prev();
+    }
 });
 
 // 초기 진행률 설정
